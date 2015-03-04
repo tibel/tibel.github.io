@@ -1,38 +1,37 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8' />
+---
+layout: default
+title: Home
+---
 
-    <link rel="shortcut icon" type="image/jpeg" href="https://gravatar.com/avatar/9224089ea0a51d5815342ac9e0ba9053?s=16" />
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/icomoon.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    <title>Thomas Ibel</title>
-  </head>
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
 
-  <body>
-
-    <header>
-      <div class="container">
-        <h1>Thomas Ibel</h1>
-        <h2>Software Developer from Austria</h2>
-
-        <section id="downloads">
-          <a href="https://github.com/tibel" class="btn"><span class="icon-github"></span> GitHub</a>
-          <a href="https://twitter.com/thomasibel" class="btn"><span class="icon-twitter"></span> Twitter</a>
-          <a href="https://stackoverflow.com/users/3333371/tibel" class="btn"><span class="icon-stackoverflow"></span> Stack Overflow</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        <h3>About</h3>
-        <p>I'm a software developer in the .NET ecosystem building (mostly desktop) solutions since 2004. 
-           More and more I'm becoming involved with the open source community contributing to a number of projects.</p>
-     </section>
-    </div>
-
-  </body>
-</html>
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
