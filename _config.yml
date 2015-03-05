@@ -3,8 +3,7 @@ markdown:         redcarpet
 highlighter:      pygments
 
 # Permalinks
-permalink:        pretty
-relative_permalinks: true
+permalink:        '/blog/posts/:title'
 
 # Setup
 title:            'Thomas Ibel'
@@ -22,3 +21,4 @@ author:
 
 # Pagination
 paginate:         5
+paginate_path:    '/blog/:num'
