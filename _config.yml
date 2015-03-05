@@ -17,8 +17,23 @@ author:
   stackoverflow:  3333371/tibel
 
 # Permalinks
-permalink:        '/blog/posts/:title'
+#permalink:        '/blog/posts/:title'
 
 # Pagination
 paginate:         5
 paginate_path:    '/blog/:num'
+
+# Defaults:
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: '/blog/posts/:title'
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      permalink: pretty
