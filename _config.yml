@@ -36,4 +36,4 @@ defaults:
       path: ""
       type: "pages"
     values:
-      permalink: pretty
+      permalink: '/:page/:basename/'
