@@ -4,17 +4,16 @@ highlighter:      pygments
 
 # Setup
 title:            'Thomas Ibel'
-tagline:          'Experiments'
 description:      'Software Developer from Austria'
 url:              https://tibel.github.io
 baseurl:          /
 
 author:
   name:           'Thomas Ibel'
-  gravatar:       9224089ea0a51d5815342ac9e0ba9053
-  twitter:        thomasibel
-  github:         tibel
-  stackoverflow:  3333371/tibel
+  gravatar:       https://gravatar.com/avatar/9224089ea0a51d5815342ac9e0ba9053
+  twitter:        https://twitter.com/thomasibel
+  github:         https://github.com/tibel
+  stackoverflow:  https://stackoverflow.com/users/3333371/tibel
 
 # Permalinks
 permalink:        /blog/posts/:title/
