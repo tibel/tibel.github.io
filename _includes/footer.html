@@ -1,38 +1,28 @@
-<footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-        <ul class="list-unstyled">
-          <li><span class="text-muted">{{ site.data.author.name }}</span></li>
-          <li><a href="mailto:{{ site.data.author.email }}">{{ site.data.author.email }}</a></li>
-        </ul>
-        </div>
-        <div class="col-md-4">
-        <ul class="list-unstyled">
-          {% if site.data.author.github.username %}
-          <li>
-            <a href="{{ site.data.author.github.url }}">
-              <i class="fa fa-github"></i>
-              <span class="username">{{ site.data.author.github.username }}</span>
-            </a>
-          </li>
-          {% endif %}
-          {% if site.data.author.twitter.username %}
-          <li>
-            <a href="{{ site.data.author.twitter.url }}">
-              <i class="fa fa-twitter"></i>
-              <span class="username">{{ site.data.author.twitter.username }}</span>
-            </a>
-          </li>
-          {% endif %}
-        </ul>
-       </div>
-        <div class="col-md-4">
-          <p class="text-muted">{{ site.description }}</p>
-        </div>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <ul class="list-unstyled">
+        <li><span class="text-muted">{{ site.data.author.name }}</span></li>
+        {% if site.data.author.linkedin %}
+        <li><a href="{{ site.data.author.linkedin.url }}"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+        {% endif %}
+      </ul>
     </div>
-</footer>
-
-<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <div class="col-md-4">
+      <ul class="list-unstyled">
+        {% if site.data.author.twitter %}
+        <li><a href="{{ site.data.author.twitter.url }}"><i class="fa fa-twitter"></i>Twitter</a></li>
+        {% endif %}
+        {% if site.data.author.github %}
+        <li><a href="{{ site.data.author.github.url }}"><i class="fa fa-github"></i>GitHub</a></li>
+        {% endif %}
+        {% if site.data.author.stackoverflow %}
+        <li><a href="{{ site.data.author.stackoverflow.url }}"><i class="fa fa-stack-overflow"></i>StackOverflow</a></li>
+        {% endif %}
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <p class="text-muted">{{ site.description }}</p>
+    </div>
+  </div>
+</div>

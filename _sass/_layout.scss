@@ -1,36 +1,23 @@
-
 body {
     padding-top: 70px; // Required padding for .navbar-fixed-top
 }
 
 .site-header {
-
 }
 
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
-	margin-top: $spacing-unit;
-}
-
-.page-header {
+.site-content {
     margin-bottom: $spacing-unit;
-	border-bottom: 0;
-}
 
-.page-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
+    h1 {
+        font-size: 42px;
+		letter-spacing: -1px;
+		line-height: 1;
+		
+		@include media-query($on-laptop) {
+			font-size: 36px;
+		}
     }
-}
-
-.page-content {
-    margin-bottom: $spacing-unit;
-
+	
     h2 {
         font-size: 32px;
 
@@ -56,10 +43,20 @@ body {
     }
 }
 
+.site-footer {
+    border-top: 1px solid $grey-color-light;
+    padding: $spacing-unit 0;
+	margin-top: $spacing-unit;
+}
+
+.page-header {
+    margin-bottom: $spacing-unit;
+	border-bottom: 0;
+}
+
 .post-list {
     margin-left: 0;
 	padding-left: 0;
-
     list-style: none;
 	
     > li {
