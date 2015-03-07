@@ -1,6 +1,5 @@
 # Author
 name:           'Thomas Ibel'
-email:          your-email@domain.com
 
 gravatar:
   url:          https://gravatar.com/avatar/9224089ea0a51d5815342ac9e0ba9053
@@ -13,3 +12,8 @@ github:
 stackoverflow:
   username:     tibel
   url:          https://stackoverflow.com/users/3333371/tibel
+openhub:
+  username:     tibel
+  url:          https://www.openhub.net/accounts/tibel
+linkedin:
+  url:          https://www.linkedin.com/in/thomasibel
