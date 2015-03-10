@@ -12,3 +12,4 @@ permalink:        /posts/:title/
 
 exclude:
   - "README.md"
+  - "LICENSE"
