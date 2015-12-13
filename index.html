@@ -1,20 +1,15 @@
 ---
-layout: default
+layout: page
+title: "Posts"
 ---
 
-<header class="page-header">
-  <h1 class="page-title">Posts</h1>
-</header>
-
-<ul class="post-list">
+<ul class="ti-list-unstyled">
   {% for post in site.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
+    <li class="w3-margin-bottom">
+      <span class="w3-text-grey">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h2 class="w3-margin-0"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
     </li>
   {% endfor %}
 </ul>
-  
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+<p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

@@ -1,13 +1,20 @@
----
-layout: base
----
-
-<header class="site-header">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html %}
+</head>
+<body>
+<header class="w3-container w3-dark-grey">
 {% include header.html %}
 </header>
-<div class="site-content container">
+
+<div class="w3-container w3-content">
 {{ content }}
 </div>
-<footer class="site-footer">
+
+<footer class="w3-border-top w3-padding-top w3-margin-top">
 {% include footer.html %}
 </footer>
+{% include scripts.html %}
+</body>
+</html>

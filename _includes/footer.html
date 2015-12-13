@@ -1,28 +1,18 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-4">
-      <ul class="list-unstyled">
-        <li><span class="text-muted">{{ site.data.author.name }}</span></li>
-        {% if site.data.author.linkedin %}
-        <li><a href="{{ site.data.author.linkedin.url }}"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-        {% endif %}
-      </ul>
-    </div>
-    <div class="col-md-4">
-      <ul class="list-unstyled">
-        {% if site.data.author.twitter %}
-        <li><a href="{{ site.data.author.twitter.url }}"><i class="fa fa-twitter"></i> Twitter</a></li>
-        {% endif %}
-        {% if site.data.author.github %}
-        <li><a href="{{ site.data.author.github.url }}"><i class="fa fa-github"></i> GitHub</a></li>
-        {% endif %}
-        {% if site.data.author.stackoverflow %}
-        <li><a href="{{ site.data.author.stackoverflow.url }}"><i class="fa fa-stack-overflow"></i> StackOverflow</a></li>
-        {% endif %}
-      </ul>
-    </div>
-    <div class="col-md-4">
-      <p class="text-muted">{{ site.description }}</p>
-    </div>
+<div class="w3-content w3-row w3-text-grey">
+  <div class="w3-container w3-third">
+    <ul class="ti-list-unstyled">
+      <li><span>{{ site.data.author.name }}</span></li>
+      {% if site.data.author.linkedin %}<li><a href="{{ site.data.author.linkedin.url }}"><i class="fa fa-linkedin"></i> LinkedIn</a></li>{% endif %}
+    </ul>
+  </div>
+  <div class="w3-container w3-third">
+    <ul class="ti-list-unstyled">
+      {% if site.data.author.twitter %}<li><a href="{{ site.data.author.twitter.url }}"><i class="fa fa-twitter"></i> Twitter</a></li>{% endif %}
+      {% if site.data.author.github %}<li><a href="{{ site.data.author.github.url }}"><i class="fa fa-github"></i> GitHub</a></li>{% endif %}
+      {% if site.data.author.stackoverflow %}<li><a href="{{ site.data.author.stackoverflow.url }}"><i class="fa fa-stack-overflow"></i> StackOverflow</a></li>{% endif %}
+    </ul>
+  </div>
+  <div class="w3-container w3-third">
+    <p class="w3-margin-0">{{ site.description }}</p>
   </div>
 </div>
