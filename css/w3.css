@@ -1,4 +1,4 @@
-﻿/* W3.CSS 1.86 by J.E.Refsnes. Do not remove this line. */
+﻿/* W3.CSS 1.9 by J.E.Refsnes. Do not remove this line. */
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
@@ -263,6 +263,10 @@ position:relative;-webkit-animation-name:animateright;-webkit-animation-duration
 position:relative;-webkit-animation-name:animatebottom;-webkit-animation-duration:0.4s;animation-name:animatebottom;animation-duration:0.4s}
 @-webkit-keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
 @keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+/* ZOOM */
+.w3-animate-zoom {-webkit-animation-name:zoom;-webkit-animation-duration:0.6s;animation-name:animatezoom;animation-duration:0.6s}
+@-webkit-keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 /* COLORS */
 .w3-text-amber{color:#ffc107 !important}.w3-amber{color:#000 !important;background-color:#ffc107 !important}
 .w3-text-aqua{color:#00ffff !important}.w3-aqua{color:#000 !important;background-color:#00ffff !important}
