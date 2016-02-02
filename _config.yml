@@ -7,6 +7,10 @@ url:              "https://tibel.github.io"
 
 # Build settings
 
+kramdown:
+  input:          GFM
+  hard_wrap:      false
+
 permalink:        /posts/:title/
 
 exclude:
