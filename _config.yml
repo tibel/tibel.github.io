@@ -1,12 +1,11 @@
 # Site settings
+
 title:            TIBEL
 description:      "Thoughts, flamewars, utilities, tutorials, codes, projects and other things by Thomas Ibel."
 baseurl:          ""
 url:              "https://tibel.github.io"
 
 # Build settings
-markdown:         redcarpet
-highlighter:      pygments
 
 permalink:        /posts/:title/
 
