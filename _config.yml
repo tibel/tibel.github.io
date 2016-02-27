@@ -7,9 +7,6 @@ url:              "https://tibel.github.io"
 
 # Build settings
 
-sass:
-  style:          compressed
-
 kramdown:
   input:          GFM
   hard_wrap:      false
