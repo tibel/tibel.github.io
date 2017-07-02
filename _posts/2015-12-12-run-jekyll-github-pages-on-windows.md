@@ -37,7 +37,7 @@ You have to download following:
 
 In your `github-pages` folder create a new text file `setpath.cmd`:
 
-```bat
+```
 @ECHO OFF
 ECHO Adding Jekyll to PATH...
 
@@ -47,7 +47,6 @@ SET CURL_PATH=%~dp0curl
 SET PYTHON_PATH=%~dp0python
 
 SET PATH=%RUBY_PATH%\bin;%DEVKIT_PATH%\bin;%DEVKIT_PATH%\mingw\bin;%CURL_PATH%\bin;%PYTHON_PATH%;%PATH%
-
 ```
 
 ### Jekyll
