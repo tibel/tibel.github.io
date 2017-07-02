@@ -4,6 +4,7 @@ a{text-decoration:none;color:#2a7ae2}
 a:hover{text-decoration:underline}
 .w3-bar a{color:#fff}
 .w3-bar a:hover{text-decoration:none;border-bottom:3px solid #fff;transition:border-bottom .25s}
-@media print {a[href^="http"]:after{content:" (" attr(href) ")"}}
-@media print {header.w3-bar{display:none}}
-@media print {footer{display:none}}
+@media print {
+a[href^="http"]:after{content:" (" attr(href) ")"}
+header.w3-bar,footer{display:none}
+}
