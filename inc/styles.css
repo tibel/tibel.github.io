@@ -1,20 +1,9 @@
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  vertical-align: -0.1em;
-}
-
-a { text-decoration:none;color:#2196F3 }
-a:hover {text-decoration:underline }
+.icon{display:inline-block;width:1em;height:1em;stroke-width:0;stroke:currentColor;fill:currentColor;vertical-align:-.1em}
+.ti-list-unstyled{list-style-type:none;padding:0;margin:0}
+a{text-decoration:none;color:#2a7ae2}
+a:hover{text-decoration:underline}
+.w3-bar a{color:#fff}
+.w3-bar a:hover{text-decoration:none;border-bottom:3px solid #fff;transition:border-bottom .25s}
 @media print {a[href^="http"]:after{content:" (" attr(href) ")"}}
-
-.w3-topnav a {color:#fff}
-.w3-topnav a.ti-active:not(:hover) {color:rgba(255,255,255,0.65)}
-@media screen and (max-width:601px) {.w3-topnav .w3-right {float:none !important}}
-@media print {.w3-topnav {display:none}}
-
-.ti-list-unstyled {list-style-type:none;padding:0;margin:0}
+@media print {header.w3-bar{display:none}}
+@media print {footer{display:none}}
