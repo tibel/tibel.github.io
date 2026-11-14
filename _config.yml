@@ -1,0 +1,7 @@
+title: Thomas Ibel
+description: Software architect focused on C#, maintainable systems, and thoughtful design.
+url: https://tibel.github.io
+baseurl: ""
+exclude:
+  - AGENTS.md
+  - README.md
